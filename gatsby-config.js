@@ -4,21 +4,22 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 require("dotenv").config({
-  path:`.env.${process.env.NODE_ENV}`,
+  path: `.env.${process.env.NODE_ENV}`,
 })
 module.exports = {
-siteMetadata:{
-title:"Tutoriel Gatsby",
-description:"Quelques descriptions aléatoires",
-author:"@ludovicdouhard",
-data:["item 1", "item 2"],
-person:{ name:"ludovic", age: 40},
-
+  siteMetadata: {
+    title: "Tutoriel Gatsby",
+    description: "Quelques descriptions aléatoires",
+    author: "@ludovicdouhard",
+    data: ["item 1", "item 2"],
+    person: { name: "ludovic", age: 40 },
+    // random comment
   },
 
   plugins: [
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
