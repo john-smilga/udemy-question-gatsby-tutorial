@@ -1,0 +1,72 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,900&display=swap');
+body{
+
+    font-family: 'Lobster', cursive; 
+}
+
+h1{
+    
+    text-transform: capitalize;
+}
+
+.blog-texte{
+
+    color:red;
+    text-transform: capitalize;
+
+}
+
+.produits-texte{
+
+    color:green;
+    text-decoration: underline;
+
+}
+
+.images{
+text-align: center;
+text-transform: capitalize;
+width: 80vw;
+margin: 0 auto 10rem auto;
+}
+
+.single-image{
+border :3px solid red;
+padding: 1rem 0;
+
+}
+
+@media screen and (min-width:992px){
+
+.images{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+}
+
+
+}
+
+
+li{
+display: inline-block;
+padding: 1rem;
+}
+
+
+.simple-produit{
+width: 90vW;
+max-width: 1170px;
+margin: 3rem auto;
+}
+@media screen and (min-width: 768px) {
+.simple-produit{
+display: grid;
+grid-template-columns: 1fr 2fr;
+column-gap: 2rem;
+
+}
+
+}
